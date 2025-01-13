@@ -1,0 +1,149 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "crossplane-cli@latest": {
+      "last_modified": "2024-12-27T03:08:00Z",
+      "resolved": "github:NixOS/nixpkgs/7cc0bff31a3a705d3ac4fdceb030a17239412210#crossplane-cli",
+      "source": "devbox-search",
+      "version": "1.18.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v2q8hq15w3wmm4avjizgs4bgsxfks3dw-crossplane-cli-1.18.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/v2q8hq15w3wmm4avjizgs4bgsxfks3dw-crossplane-cli-1.18.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1idxdvb2g44qr90vyc61gfhf7aiskz8c-crossplane-cli-1.18.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1idxdvb2g44qr90vyc61gfhf7aiskz8c-crossplane-cli-1.18.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2mcllqhk414xpq4mmx79g92hpjhjki21-crossplane-cli-1.18.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2mcllqhk414xpq4mmx79g92hpjhjki21-crossplane-cli-1.18.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6fpf645iym3k2ff3khks3j79jqq3b877-crossplane-cli-1.18.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6fpf645iym3k2ff3khks3j79jqq3b877-crossplane-cli-1.18.2"
+        }
+      }
+    },
+    "go-task@latest": {
+      "last_modified": "2025-01-04T17:00:17Z",
+      "resolved": "github:NixOS/nixpkgs/a1945f760a8fe019a4d753808de424dcd4e5b3cf#go-task",
+      "source": "devbox-search",
+      "version": "3.40.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/j7qhiv1i0kamdik0gh9q5r47llvl8z8y-go-task-3.40.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/j7qhiv1i0kamdik0gh9q5r47llvl8z8y-go-task-3.40.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/paf37ssbfhb9hxg1cd5znswzwmx8sdss-go-task-3.40.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/paf37ssbfhb9hxg1cd5znswzwmx8sdss-go-task-3.40.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1drc5qjlxalnjrirpawbqf0bjs911n3q-go-task-3.40.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1drc5qjlxalnjrirpawbqf0bjs911n3q-go-task-3.40.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ds3s43anl3rwk5vz80n4kck2g7z7i1lp-go-task-3.40.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ds3s43anl3rwk5vz80n4kck2g7z7i1lp-go-task-3.40.1"
+        }
+      }
+    },
+    "upbound@latest": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#upbound",
+      "source": "devbox-search",
+      "version": "0.36.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dkcqai8qvv9jg294ldxjcc8y1zqnxm8m-upbound-0.36.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dkcqai8qvv9jg294ldxjcc8y1zqnxm8m-upbound-0.36.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1b0k1bnkcp4jyznbdwa250m6l40rbc8d-upbound-0.36.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1b0k1bnkcp4jyznbdwa250m6l40rbc8d-upbound-0.36.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mc5kcv21l3q30r4flh2ciglrbwcb94d9-upbound-0.36.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mc5kcv21l3q30r4flh2ciglrbwcb94d9-upbound-0.36.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/g0zm24dajkm7j5s6yl0mkw98n8fdqfwx-upbound-0.36.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/g0zm24dajkm7j5s6yl0mkw98n8fdqfwx-upbound-0.36.1"
+        }
+      }
+    }
+  }
+}
