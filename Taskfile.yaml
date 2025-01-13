@@ -2,7 +2,10 @@ version: '3'
 
 tasks:
   build:
+    env:
+      IMAGE_NAME_LOWER:
+        sh: echo ${IMAGE_NAME,,}
     cmds:
       - mkdir -p out
       - cd package && crossplane xpkg build --package-file ../out/cloudflare-dns.xpkg
-      - cd package && crossplane xpkg push --package-files ../out/cloudflare-dns.xpkg $REGISTRY/$IMAGE_NAME:$GITHUB_SHA
+      - cd package && crossplane xpkg push --package-files ../out/cloudflare-dns.xpkg $REGISTRY/$IMAGE_NAME_LOWER:$GITHUB_SHA
