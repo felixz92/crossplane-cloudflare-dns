@@ -20,3 +20,5 @@ spec:
       version: "v0.19.2"
     - function: xpkg.upbound.io/crossplane-contrib/function-patch-and-transform
       version: "v0.8.0"
+    - function: xpkg.upbound.io/crossplane-contrib/function-auto-ready
+      version: "v0.4.0"
