@@ -10,7 +10,7 @@ spec:
   pipeline:
     - step: create-terraform-workspace
       functionRef:
-        name: function-patch-and-transform
+        name: crossplane-contrib-function-patch-and-transform
       input:
         apiVersion: pt.fn.crossplane.io/v1beta1
         kind: Resources
@@ -68,4 +68,4 @@ spec:
                 toFieldPath: "spec.forProvider.varmap.record_content"
     - step: automatically-detect-ready-composed-resources
       functionRef:
-        name: function-auto-ready
+        name: crossplane-contrib-function-auto-ready
