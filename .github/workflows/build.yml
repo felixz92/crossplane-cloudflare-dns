@@ -33,4 +33,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         run: |
-          task build
+          devbox run build
