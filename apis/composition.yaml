@@ -1,0 +1,68 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: cloudflare-dns-record
+spec:
+  compositeTypeRef:
+    apiVersion: cloudflare.felixz92.github.com/v1alpha1
+    kind: xDnsRecord
+  mode: Pipeline
+  pipeline:
+    - step: patch-and-transform
+      functionRef:
+        name: function-patch-and-transform
+      input:
+        apiVersion: pt.fn.crossplane.io/v1beta1
+        kind: Resources
+        resources:
+          - name: terraform-workspace
+            base:
+              apiVersion: tf.upbound.io/v1beta1
+              kind: Workspace
+              spec:
+                providerConfigRef:
+                  name: cloudflare-terraform
+                forProvider:
+                  initArgs: ["-upgrade=true"]
+                  source: Inline
+                  module: |
+                    variable "zone_name" {
+                      type = string
+                    }
+                    
+                    variable "record_name" {
+                      type = string
+                    }
+                    
+                    variable "record_type" {
+                      type = string
+                    }
+                    
+                    variable "record_content" {
+                      type = string
+                    }
+                    
+                    data "cloudflare_zone" "zone" {
+                      name = var.zone_name
+                    }
+                    
+                    resource "cloudflare_record" "dns_record" {
+                      zone_id = data.cloudflare_zone.zone.id
+                      name    = var.record_name
+                      content   = var.record_content
+                      type    = var.record_type
+                      proxied = false
+                    }
+            patches:
+              - type: FromCompositeFieldPath
+                fromFieldPath: "spec.zone"
+                toFieldPath: "spec.forProvider.varmap.zone_name"
+              - type: FromCompositeFieldPath
+                fromFieldPath: "spec.name"
+                toFieldPath: "spec.forProvider.varmap.record_name"
+              - type: FromCompositeFieldPath
+                fromFieldPath: "spec.type"
+                toFieldPath: "spec.forProvider.varmap.record_type"
+              - type: FromCompositeFieldPath
+                fromFieldPath: "spec.content"
+                toFieldPath: "spec.forProvider.varmap.record_content"

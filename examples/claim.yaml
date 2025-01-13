@@ -1,0 +1,9 @@
+apiVersion: cloudflare.felixz92.github.com/v1alpha1
+kind: DnsRecord
+metadata:
+  name: myrecord
+spec:
+  name: "@"
+  zone: example.com
+  type: A
+  content: 192.168.0.1

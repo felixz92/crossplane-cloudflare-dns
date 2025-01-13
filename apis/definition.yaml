@@ -1,0 +1,39 @@
+---
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: xdnsrecords.cloudflare.felixz92.github.com
+spec:
+  group: cloudflare.felixz92.github.com
+  names:
+    kind: xDnsRecord
+    plural: xdnsrecords
+  claimNames:
+    kind: DnsRecord
+    plural: dnsrecords
+  defaultCompositeDeletePolicy: Foreground
+  versions:
+    - name: v1alpha1
+      served: true
+      referenceable: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                name:
+                  type: string
+                zone:
+                  type: string
+                type:
+                  type: string
+                  enum: [A, AAAA, CAA, CNAME, TXT, SRV, LOC, MX, NS, SPF, CERT, DNSKEY, DS, NAPTR, SMIMEA, SSHFP, TLSA, URI, PTR, HTTPS, SVCB]
+                content:
+                  type: string
+              required:
+                - name
+                - zone
+                - type
+                - content
