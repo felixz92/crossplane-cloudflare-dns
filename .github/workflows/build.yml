@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: Install Devbox
-        uses: jetpack-io/devbox-install-action@v0.11.0
+        uses: jetpack-io/devbox-install-action@v0.15.0
         with:
           enable-cache: true
       - name: Log in to the Container registry
