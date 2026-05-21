@@ -97,51 +97,51 @@
         }
       }
     },
-    "upbound@latest": {
-      "last_modified": "2024-12-23T21:10:33Z",
-      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#upbound",
+    "upbound@0.40.3": {
+      "last_modified": "2026-04-23T13:07:47Z",
+      "resolved": "github:NixOS/nixpkgs/01fbdeef22b76df85ea168fbfe1bfd9e63681b30#upbound",
       "source": "devbox-search",
-      "version": "0.36.1",
+      "version": "0.40.3",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dkcqai8qvv9jg294ldxjcc8y1zqnxm8m-upbound-0.36.1",
+              "path": "/nix/store/4ziwdash73mf4xwaz8y44qr5c6899bmj-upbound-0.40.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dkcqai8qvv9jg294ldxjcc8y1zqnxm8m-upbound-0.36.1"
+          "store_path": "/nix/store/4ziwdash73mf4xwaz8y44qr5c6899bmj-upbound-0.40.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1b0k1bnkcp4jyznbdwa250m6l40rbc8d-upbound-0.36.1",
+              "path": "/nix/store/6i9j5brs02nnf0lzb1gq9ypm6nz164v4-upbound-0.40.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/1b0k1bnkcp4jyznbdwa250m6l40rbc8d-upbound-0.36.1"
+          "store_path": "/nix/store/6i9j5brs02nnf0lzb1gq9ypm6nz164v4-upbound-0.40.3"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mc5kcv21l3q30r4flh2ciglrbwcb94d9-upbound-0.36.1",
+              "path": "/nix/store/vg4zzbwlqhz4hn9b2zqh317f5zylpw1n-upbound-0.40.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mc5kcv21l3q30r4flh2ciglrbwcb94d9-upbound-0.36.1"
+          "store_path": "/nix/store/vg4zzbwlqhz4hn9b2zqh317f5zylpw1n-upbound-0.40.3"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g0zm24dajkm7j5s6yl0mkw98n8fdqfwx-upbound-0.36.1",
+              "path": "/nix/store/r82h4qlnd9qca58qp1a8wwyfmrhvrvdj-upbound-0.40.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/g0zm24dajkm7j5s6yl0mkw98n8fdqfwx-upbound-0.36.1"
+          "store_path": "/nix/store/r82h4qlnd9qca58qp1a8wwyfmrhvrvdj-upbound-0.40.3"
         }
       }
     }
