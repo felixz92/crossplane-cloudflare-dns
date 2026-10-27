@@ -3,7 +3,7 @@
   "packages": [
     "crossplane-cli@latest",
     "go-task@latest",
-    "upbound@latest"
+    "upbound@0.40.3"
   ],
   "shell": {
     "init_hook": [
